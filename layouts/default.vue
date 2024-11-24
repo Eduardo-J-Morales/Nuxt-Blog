@@ -1,5 +1,4 @@
 <template>
-<nav>
     <div>
         <header>
             <nav>
@@ -17,24 +16,29 @@
                     </div>
                     <div>
                         <ClientOnly>
-                            <template>
+                            <template >
                                 <NuxtLink>Login</NuxtLink>
                             </template>
                             <template>
-                                <button @click="logout"></button>
+                                <button @click=""></button>
                             </template>
                         </ClientOnly>
                     </div>
                 </div>
             </nav>
         </header>
+        <main>
+            <slot/>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; {{ new Date().getFullYear() }} Eduardo Morales - Nuxt Blog</p>
+            </div>
+        </footer>
     </div>
-</nav>
-
-<slot/>
 </template>
 
-<script>
+<script setup>
 
 </script>
 

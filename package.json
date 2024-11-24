@@ -1,17 +1,24 @@
+
 {
-  "name": "nuxt",
+  "name": "nuxt-blog",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "HOST=0.0.0.0 nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "nuxt": "^3.10.0",
-    "vue": "^3.4.20",
-    "vue-router": "^4.3.0"
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "@nuxt/content": "^2.12.1",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
+    "@vueuse/nuxt": "^10.9.0",
+    "@headlessui/vue": "^1.7.19"
   }
 }
+
+

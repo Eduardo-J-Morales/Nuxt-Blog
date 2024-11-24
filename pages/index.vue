@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>hola</h1>
+        <h1 class="bg-slate-500">hola</h1>
     </div>
 </template>
 
